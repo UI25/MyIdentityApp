@@ -1,0 +1,41 @@
+﻿@page "{returnUrl?}"
+@model IdentityApp.Pages.Account.SignInModel
+@{
+    ViewData["Title"] = "Sign In";
+}
+
+<div class="container">
+    <div class="row justify-content-center align-items-center">
+        <div class="col-sm-12 col-md-12 col-lg-4">
+            <h3 class="mb-3">SignIn User</h3>
+            <form method="post">
+                <div asp-validation-summary="All" class="text-danger"></div>
+                <div class="mb-3">
+                    <label class="form-label" asp-for="Email">Email Address</label>
+                    <input type="text" asp-for="Email" class="form-control" />
+                    <span asp-validation-for="Email" class="text-danger"></span>
+                </div>
+                <div class="mb-3">
+                    <label class="form-label" asp-for="Password">Password</label>
+                    <input type="text" asp-for="Password" class="form-control" />
+                    <span asp-validation-for="Password" class="text-danger"></span>
+                </div>
+                <div class="mb-3">
+                    <input type="checkbox" asp-for="RememberMe" class="form-check-input" />
+                    <label class="form-label" asp-for="RememberMe">Remember Me?</label>
+                </div>
+                <div class="mb-3">
+                    <button type="submit" class="btn btn-primary">SignIn</button>
+                </div>
+            </form>
+            <h6>Sign In with a Social Media Account</h6>
+            <form method="post" asp-page="SignIn" asp-page-handler="External">
+                @foreach (var scheme in await
+                Model.SignInManager.GetExternalAuthenticationSchemesAsync())
+                {
+                    <partial name="_ExternalButtonPartial" model="scheme" />
+                }
+            </form>
+        </div>
+    </div>
+</div>

@@ -1,0 +1,11 @@
+﻿@addTagHelper *, Microsoft.AspNetCore.Mvc.TagHelpers
+@using IdentityApp
+@using IdentityApp.Models;
+@using Microsoft.AspNetCore.Identity;
+@using Microsoft.AspNetCore.Identity.EntityFrameworkCore;
+@using Microsoft.AspNetCore.Identity.UI;
+@using System.Security.Claims;
+@namespace IdentityApp.Pages 
+@inject SignInManager<AppUser> SignInManager
+@inject UserManager<AppUser> UserManager
+
