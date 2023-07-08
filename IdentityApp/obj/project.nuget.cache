@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "5ya36aG2gV8o8k5oGm+p/1mfTnbDiFJfCDCYSGHmF+jCHk1BK5a8v4W+G9u+OS7/9TNmBp4cz77cRUnKLTIHNA==",
+  "dgSpecHash": "uiR9rwvXuTOd1AfTwqroiltRug4v24PBltjx4p26jc7d45Mv9L4ZF+S6bGNnPoyMTBqlw/pnS6WsyRut5IFvyQ==",
   "success": true,
-  "projectFilePath": "C:\\Users\\ufuki\\Desktop\\DELL-Documents\\NewProjects\\MyIdintityProject\\IdentityApp\\IdentityApp.csproj",
+  "projectFilePath": "C:\\Users\\ufuki\\Desktop\\DELL-Documents\\NewProjects\\MyIdintityProject\\MyIdentityApp\\IdentityApp\\IdentityApp.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\ufuki\\.nuget\\packages\\azure.core\\1.24.0\\azure.core.1.24.0.nupkg.sha512",
     "C:\\Users\\ufuki\\.nuget\\packages\\azure.identity\\1.6.0\\azure.identity.1.6.0.nupkg.sha512",
